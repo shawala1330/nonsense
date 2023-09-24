@@ -1,0 +1,126 @@
+body {
+    margin: 0%;
+    background-color: #99d3ef;
+    background-image: url(bgdesign.jpg);
+}
+header{
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+    font-family: initial;
+    font-size: xx-large;
+    color: white;
+}
+
+nav {
+   list-style: none;
+   text-align: center;
+   margin-top: 30px;
+}
+
+.division a {
+    text-decoration: none;
+    margin: 30px;
+    font-size: 25px;
+    color: white;
+    background-color: black;
+    padding: 8px;
+    border-radius: 10px;
+    display: inline-flex;
+    
+}
+
+.division :hover {
+    padding: 10px 20px;
+    background-color:white;
+    opacity: 60%;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+
+@keyframes slideFromTop {
+    from {
+        transform: translateY(-300px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.social {
+    animation: slideFromTop 0.6s ease-in 0ms 1 none;
+}
+
+@keyframes slideFromLeft {
+    from {
+        transform: translateX(-1000px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.division {
+    animation: slideFromLeft 1s ease-in 0ms 1 none;
+}
+
+@keyframes slideFromDown {
+    from {
+        transform: translateY(1000px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+.socialLogo {
+    height: 1000px;
+    justify-content: space-between;
+    animation: slideFromDown 1s ease-in 0ms 1 none;
+    
+}
+
+.socialLogo a {
+    display:inline-flex;
+    text-decoration: none;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    align-items: center;
+    border-radius: 30px;
+    justify-content: center;
+    transform: rotate(45deg);    
+    display: inline-flex;
+
+    
+}
+.socialLogo a i {
+    font-size: 150px;
+    color:black;  
+    text-align: center;
+    transform: rotate(-45deg);
+   
+}
+
+.socialLogo a:hover {
+    transition: background-color 0.2s, transform 0.2s;
+    border: 2px solid black;
+    cursor: pointer;
+    opacity: 60%;
+}
+
+.credits {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: space-between;
+    animation: slideFromDown 1s ease-in 0ms 1 none;
+    margin-top: 300px;
+}
